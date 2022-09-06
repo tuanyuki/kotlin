@@ -20,18 +20,18 @@ class MainViewModel:ViewModel() {
         useDot.value = false
     }
 
-    fun click_c(){
+    fun clickC(){
         textCaculator.value = ""
     }
-    fun click_del(){
+    fun clickDel(){
         if (!textCaculator.value.isNullOrEmpty()) {
             val length = textCaculator.value.toString().length
             textCaculator.value = textCaculator.value!!.toString().substring(0,length-1)
         }
     }
-    fun click_add(){
+    fun clickAdd(){
         if (canCalculator.value == false){
-             click_del()
+             clickDel()
         }
         if (textCaculator.value.toString().isNotEmpty()){
             useDot.value = false
@@ -39,17 +39,17 @@ class MainViewModel:ViewModel() {
             canCalculator.value = false
         }
     }
-    fun click_sub(){
+    fun clickSub(){
         if (canCalculator.value == false){
-            click_del()
+            clickDel()
         }
         useDot.value = false
         textCaculator.value += "-"
         canCalculator.value = false
     }
-    fun click_mul(){
+    fun clickMul(){
         if (canCalculator.value == false){
-            click_del()
+            clickDel()
         }
         if (textCaculator.value.toString().isNotEmpty()){
             useDot.value = false
@@ -57,9 +57,9 @@ class MainViewModel:ViewModel() {
             canCalculator.value = false
         }
     }
-    fun click_div(){
+    fun clickDiv(){
         if (canCalculator.value == false){
-            click_del()
+            clickDel()
         }
         if (textCaculator.value.toString().isNotEmpty()){
             useDot.value = false
@@ -67,7 +67,7 @@ class MainViewModel:ViewModel() {
             canCalculator.value = false
         }
     }
-    fun click_dot(){
+    fun clickDot(){
         if (useDot.value == false){
             useDot.value = true
             textCaculator.value += "."
@@ -75,20 +75,22 @@ class MainViewModel:ViewModel() {
         }
     }
 
-    fun click_digit(view: View){
+    fun clickDigit(view: View){
         val button = view as Button
         Log.d(TAG, "click_digit  : ${button.text}")
         textCaculator.value += button.text.toString()
         canCalculator.value = true
     }
 
-    fun click_equal() {
-        if (textCaculator.value.toString().get(textCaculator.value.toString().length-1).isDigit()){
-            useDot.value = false
-            canCalculator.value = true
+    fun clickEqual() {
+        if (textCaculator.value.toString().isNotEmpty()){
+            if (textCaculator.value.toString().get(textCaculator.value.toString().length-1).isDigit()){
+                useDot.value = false
+                canCalculator.value = true
 
-            result.value = calculateResults()
-            Log.d(TAG, "click_equal: ${result.value}")
+                result.value = calculateResults()
+                Log.d(TAG, "click_equal: ${result.value}")
+            }
         }
     }
 

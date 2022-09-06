@@ -85,7 +85,7 @@
                     android:textColor="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_c"
-                    android:onClick="@{()->viewmodel.click_c()}"/>
+                    android:onClick="@{()->viewmodel.clickC()}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -101,7 +101,7 @@
                     android:tint="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:src="@drawable/ic_baseline_backspace_24"
-                    android:onClick="@{()->viewmodel.click_del()}"/>
+                    android:onClick="@{()->viewmodel.clickDel()}"/>
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -109,7 +109,7 @@
                     android:tint="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:src="@drawable/ic_baseline_add_24"
-                    android:onClick="@{()->viewmodel.click_add()}"/>
+                    android:onClick="@{()->viewmodel.clickAdd()}"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -125,7 +125,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_7"
-                    android:onClick="@{()->viewmodel.click_digit(button7)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button7)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button8"
                     android:layout_width="0dp"
@@ -135,7 +135,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_8"
-                    android:onClick="@{()->viewmodel.click_digit(button8)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button8)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button9"
                     android:layout_width="0dp"
@@ -145,7 +145,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_9"
-                    android:onClick="@{()->viewmodel.click_digit(button9)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button9)}"/>
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -153,7 +153,7 @@
                     android:tint="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:src="@drawable/ic_baseline_remove_24"
-                    android:onClick="@{()->viewmodel.click_sub()}"/>
+                    android:onClick="@{()->viewmodel.clickSub()}"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -169,7 +169,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_4"
-                    android:onClick="@{()->viewmodel.click_digit(button4)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button4)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button5"
                     android:layout_width="0dp"
@@ -179,7 +179,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_5"
-                    android:onClick="@{()->viewmodel.click_digit(button5)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button5)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button6"
                     android:layout_width="0dp"
@@ -189,7 +189,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_6"
-                    android:onClick="@{()->viewmodel.click_digit(button6)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button6)}"/>
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -197,7 +197,7 @@
                     android:tint="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:src="@drawable/ic_baseline_close_24"
-                    android:onClick="@{()->viewmodel.click_mul()}"/>
+                    android:onClick="@{()->viewmodel.clickMul()}"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -213,7 +213,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_1"
-                    android:onClick="@{()->viewmodel.click_digit(button1)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button1)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button2"
                     android:layout_width="0dp"
@@ -223,7 +223,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_2"
-                    android:onClick="@{()->viewmodel.click_digit(button2)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button2)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button3"
                     android:layout_width="0dp"
@@ -233,7 +233,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_3"
-                    android:onClick="@{()->viewmodel.click_digit(button3)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button3)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -242,7 +242,7 @@
                     android:textColor="@color/second_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_div"
-                    android:onClick="@{()->viewmodel.click_div()}"/>
+                    android:onClick="@{()->viewmodel.clickDiv()}"/>
             </LinearLayout>
 
             <LinearLayout
@@ -266,7 +266,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_0"
-                    android:onClick="@{()->viewmodel.click_digit(button0)}"/>
+                    android:onClick="@{()->viewmodel.clickDigit(button0)}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/buttonDot"
                     android:layout_width="0dp"
@@ -276,7 +276,7 @@
                     android:textColor="@color/main_color"
                     android:background="@drawable/button_calculator"
                     android:text="@string/button_."
-                    android:onClick="@{()->viewmodel.click_dot()}"/>
+                    android:onClick="@{()->viewmodel.clickDot()}"/>
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="0dp"
                     android:layout_height="@dimen/height_button"
@@ -286,7 +286,7 @@
                     android:background="@drawable/button_calculator"
                     android:backgroundTint="@color/second_color"
                     android:text="@string/button_equal"
-                    android:onClick="@{()->viewmodel.click_equal()}"/>
+                    android:onClick="@{()->viewmodel.clickEqual()}"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
